@@ -10,6 +10,9 @@ variable "aws_ami_name" {
   description = "Name of the ami I want for my project"
   type        = string
 }
+variable "my_keypair" {
+  default = "new-key-pair"
+} 
 
 variable "vpc_name" {
   description = "Name of the vpc for my project"
@@ -24,10 +27,6 @@ variable "ec2_type" {
 
 variable "public_subnet_name" {
   type = string
-}
-
-variable "my_keypair" {
-  default = "aws_keypair"
 }
 
 variable "number_of_instances" {
