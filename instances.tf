@@ -6,12 +6,12 @@ resource "aws_instance" "my_public_server" {
   key_name               = var.my_keypair
 
   tags = {
-      Name = "public_server"
+    Name = "public_server"
   }
 }
 
 resource "aws_instance" "private_server" {
-  
+
   ami                    = data.aws_ami.amazon-linux-2.id
   instance_type          = var.ec2_type
   subnet_id              = data.aws_subnet.public.id
@@ -19,6 +19,6 @@ resource "aws_instance" "private_server" {
   key_name               = var.my_keypair
 
   tags = {
-      Name = "public_server"
+    Name = "public_server"
   }
 }

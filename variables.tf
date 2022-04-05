@@ -3,7 +3,7 @@
 
 variable "aws_owner_id" {
   description = "Contains the owner ID of the ami for amazon linux"
-  type = string 
+  type        = string
 }
 
 variable "aws_ami_name" {
@@ -12,7 +12,7 @@ variable "aws_ami_name" {
 }
 variable "my_keypair" {
   default = "new-key-pair"
-} 
+}
 
 variable "vpc_name" {
   description = "Name of the vpc for my project"
@@ -34,11 +34,11 @@ variable "private_subnet_name" {
 }
 
 variable "number_of_instances" {
-    description = "Amount of instances for my public subnet"
+  description = "Amount of instances for my public subnet"
 }
 
 variable "number_of_private_instances" {
-    description = "Amount of instances for my private subnet"
+  description = "Amount of instances for my private subnet"
 }
 
 
